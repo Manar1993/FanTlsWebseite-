@@ -375,3 +375,145 @@ textarea {
         align-items: flex-start;
     }
 }
+/* ------------------------------------------------------------ */
+/*   📱 MOBIL-OPTIMIERUNG (max-width: 480px)                    */
+/*   Dieser Bereich regelt das Aussehen der Seite auf Handys.   */
+/* ------------------------------------------------------------ */
+@media (max-width: 480px) {
+
+    /* 🧩 HEADER-Anpassungen */
+    /* Header-Elemente untereinander anordnen */
+    .header-inner {
+        flex-direction: column;   /* Logo und Navigation untereinander */
+        align-items: flex-start;  /* links ausrichten */
+        gap: 8px;
+        padding: 8px 12px;
+    }
+
+    /* Logo auf Handy etwas kleiner */
+    .logo {
+        height: 60px;
+    }
+
+    /* Navigation auf Handy umbrechen */
+    .main-nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* Navigation-Links kleiner */
+    .main-nav a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    /* 🖼 HERO-SLIDER */
+    /* Höhe reduzieren und mobile-freundlich machen */
+    .hero-slider {
+        height: 65vh; 
+        min-height: 350px;
+    }
+
+    /* Inhalt des Sliders anpassen */
+    .hero-overlay {
+        padding: 50px 12px 20px; 
+        align-items: flex-start; /* Links ausrichten */
+    }
+
+    /* Titel im Hero kleiner fürs Handy */
+    .hero-overlay h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    /* Beschreibungstext kleiner */
+    .hero-text {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    /* Slogans kleiner */
+    .hero-slogans {
+        font-size: 12px;
+    }
+
+    /* Buttons untereinander */
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;       /* Button volle Breite */
+        font-size: 13px;   /* klein genug für Handy */
+        padding: 10px;
+    }
+
+    /* 📄 Abschnitt allgemein */
+    .section {
+        padding: 40px 14px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    /* 📦 KARTEN / LEISTUNGEN */
+    /* Eine Karte pro Zeile */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+
+    /* 📝 FORMULARE */
+    /* Alle Felder untereinander */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    input, textarea {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+
+    /* 📞 KONTAKT-BEREICH */
+    /* Kontaktinfo & Formular untereinander */
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-form {
+        padding: 12px;
+    }
+
+    .contact-info h3 {
+        font-size: 18px;
+    }
+
+    /* Weniger Abstand zwischen Texten */
+    .contact-info p {
+        margin-bottom: 6px !important;
+    }
+
+    /* 🦶 FOOTER */
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .page-footer {
+        padding: 10px 12px;
+    }
+}
